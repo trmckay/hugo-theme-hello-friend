@@ -9,7 +9,7 @@
   {{ $paginator := .Paginate (where $PageContext.RegularPages "Type" $contentTypeName) }}
 
   {{ if .Content }}
-  <div style="max-width: 30%; text-align: left;" class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+  <div style="max-width:750px; margin-left: 5%; margin-right: 5%; text-align: left;" class="index-content {{ if .Params.framed -}}framed{{- end -}}">
       {{ .Content }}
     </div>
   {{ end }}
